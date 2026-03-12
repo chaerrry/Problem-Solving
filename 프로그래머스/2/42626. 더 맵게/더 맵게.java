@@ -20,10 +20,6 @@ class Solution {
             minHeap.offer(a+b);
         }
         
-        if(minHeap.peek() >= K){
-            return answer;
-        }else {
-            return -1;
-        }
+        return minHeap.peek() >= K ? answer : -1;
     }
 }
